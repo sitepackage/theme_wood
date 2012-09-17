@@ -20,7 +20,7 @@
 [% 'jquery/jquery.bxslider.min.js' | global_asset_uri | script_tag %]
 [% content_for_header %]
 </head>
-<body [%- if settings.body_bg_uri  %] style="background: url('[% settings.body_bg_uri  %]') [% settings.body_bg_repeat || "repeat" %]  top center;"[%- end %]>>
+<body [% if settings.body_bg_uri  %] style="background: url('[% settings.body_bg_uri  %]') [% settings.body_bg_repeat || "repeat" %]  top center;"[% end %]>
   <script type="text/javascript" charset="utf-8">
     $j = jQuery.noConflict();
     // fancybox
